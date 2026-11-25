@@ -16,7 +16,7 @@ Skriv ut `git log --oneline --graph --all` direkt efter att du klonat. Klistra i
 Klistra in `git log --oneline --graph --all` efter merge:
 
 ```
-(klistra in)
+
 ```
 
 Fråga: Vad är skillnaden mellan en *fast-forward*-merge och en merge som skapar en egen merge-commit? Svara med egna ord:
