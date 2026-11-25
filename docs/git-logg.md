@@ -35,14 +35,21 @@ Fråga: Vad är skillnaden mellan en *fast-forward*-merge och en merge som skapa
 Klistra in filen med konfliktmarkörerna, precis som den såg ut innan du löste den:
 
 ```
-(klistra in)
+<<<<<<< HEAD
+Helger: 10–17
+=======
+Helger: 09–18
+>>>>>>> oppettider-sommar
 ```
 
 Fråga: Vad betyder `<<<<<<< HEAD`, `=======` och `>>>>>>> grennamn`?
-
+`<<<<<<< HEAD`: Början på min version (grenen jag står på).
+`=======`: Skiljer de två versionerna åt.
+`>>>>>>> grennamn`: Slutet på den andra versionen.
 
 Hur löste du den, och varför blev det så?
-
+Jag klickade på Accept Current Change :D
+Den valde då att behålla det som låg mellan `<<<<<<< HEAD` och `=======`. Det blev så eftersom att jag valde att behålla MIN version.
 
 ## 4. Ångra
 Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken är säkrast när ändringen redan är pushad?
