@@ -6,7 +6,10 @@ Klistra in utskrifter och svara på frågorna. Det här är din dokumentation av
 Skriv ut `git log --oneline --graph --all` direkt efter att du klonat. Klistra in här:
 
 ```
-(klistra in)
+* 5a5841d (HEAD -> main, origin/main, origin/HEAD) Modul 5 i TypeScript med Vite
+* 3804533 Add files via upload
+* f7a13a4 Add files via upload
+* c9a0075 Initial commit
 ```
 
 ## 2. Merge utan konflikt
