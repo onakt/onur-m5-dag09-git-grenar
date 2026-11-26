@@ -69,9 +69,9 @@ Läs om `git stash` (lägg undan ändringar tillfälligt) och `git cherry-pick` 
 ## Kontrollista: så vet du att du är klar
 
 - [ ] `docs/git-logg.md` är ifylld med graf-utskrifter, konfliktfilen, förklaringar med egna ord och PR-länk.
-- [ ] Historiken innehåller minst en merge-commit och en löst konflikt.
+- [X] Historiken innehåller minst en merge-commit och en löst konflikt.
 - [ ] Inga konfliktmarkörer finns kvar i någon fil (`git grep "<<<<<<<"` ger inga träffar).
-- [ ] Du har avbrutit en merge med `git merge --abort`.
+- [X] Du har avbrutit en merge med `git merge --abort`.
 - [ ] Du har en `.gitignore` som döljer `.env`, `*.log` och `node_modules/`.
 - [ ] Din pull request är öppnad och mergad på ditt eget repo (inte på Lexicon-RC).
 - [ ] Du kan förklara skillnaden mellan `restore`, `revert` och `reset`.
