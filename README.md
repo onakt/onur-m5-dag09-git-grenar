@@ -57,6 +57,7 @@ Skapa en ny konflikt på samma sätt (två nya grenar som ändrar `Röda dagar: 
 ### Steg 8. Ignorera filer med .gitignore
 
 Skapa filerna `.env`, `debug.log` och `node_modules/x.txt` (mappen får du skapa själv). Kör `git status`: de syns. Skapa `.gitignore` med raderna `.env`, `*.log` och `node_modules/`. Kör `git status` igen: nu syns bara `.gitignore`. Commit. Förklara varför man aldrig ska committa en `.env`.
+**Förklaring**: Man ska inte committa `.env` eftersom den ofta innehåller känslig information (API-nycklar, lösenord, privat information). Även om man senare tar bort `.env`så finns den känsliga informationen kvar i Git-historiken (commits).
 
 ### Steg 9. Pull request på ditt eget repo
 
