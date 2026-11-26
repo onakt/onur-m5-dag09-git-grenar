@@ -64,9 +64,13 @@ Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken ä
 
 ## 5. Pull request
 Länk till din pull request (på ditt eget repo):
-
+[text](https://github.com/onakt/onur-m5-dag09-git-grenar/pull/1)
 
 ## 6. Reflektion
 Vad är det värsta som kan hända om man kör `git push --force` på en gren som andra använder?
+Det värsta som kan hända är att man skriver över andras commit-historik och gör att deras arbete försvinner från den gemensamma branchen!
 
-
+1. Andras commits kan försvinna från branchen
+2. Andras arbete går förlorat
+3. Historiken blir osynkroniserad
+4. Återställning blir komplicerad (Måste hitta gamla commit-hasharna eller andra lokala kopior)
