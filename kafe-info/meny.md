@@ -5,3 +5,4 @@
 - Ostmacka, 59 kr
 - Latte, 45 kr
 - Pizza, 109 kr
+- Coca Cola Zero, 22 kr
