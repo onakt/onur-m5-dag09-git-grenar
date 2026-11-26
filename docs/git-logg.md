@@ -54,6 +54,13 @@ Den valde då att behålla det som låg mellan `<<<<<<< HEAD` och `=======`. Det
 ## 4. Ångra
 Vad är skillnaden mellan `git restore`, `git revert` och `git reset`? Vilken är säkrast när ändringen redan är pushad?
 
+`git restore`: återställer filen till senaste commit. Tar bort ocommittade ändringar. Ändrar INTE commit-historiken. Kan användas för att ta bort filer från staging med --staged. Använd när du ändrat en fil men vill ångra ändringen.
+
+`git revert`: Ångra en commit! Skapar en ny commit som ångrar en tidigare commit. Behåller den befintliga commit-historiken. Fungerar även när ändringar har pushats. Säker för samarbete, eftersom den inte skriver om historiken. Använd när du vill ångra en commit som redan pushats.
+
+`git reset`: Flyttar tillbaka HEAD, alltså nuvarande branch till en tidigare commit. Tre vanliga varianter: git reset --soft (behåller ändringarna i staged), git reset --mixed (behåller ändringarna men tar bort dom från staging), git reset --hard (tar bort ändringarna HELT från arbetskatalogen och staging). Använd när du vill korrigera lokal commit-historik, innan ändringar har pushats.
+
+**Säkrast när ändring redan är pushad**: git revert! Den skriver inte om historiken. I stället skapas en ny commit som ångrar den tidigare ändringen. Perfekt när flera personer arbetar i samma repo.
 
 ## 5. Pull request
 Länk till din pull request (på ditt eget repo):
